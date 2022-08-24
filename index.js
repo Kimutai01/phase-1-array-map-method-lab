@@ -15,17 +15,10 @@ const titleCased = () => {
   return tutorials.map((tutorial) => {
     const splittedArr = tutorial.split(" ");
     const capital = splittedArr.map(
-      str => str.charAt(0).toUpperCase() + str.slice(1)
+      (str) => str.charAt(0).toUpperCase() + str.slice(1)
     );
     const final = capital.join(" ");
     return final;
   });
-  // return tutorials.map((tutorial) => {
-  //   const splittedArr = tutorial.split(" ");
-  //   const capital = splittedArr
-  //     .map((arr) => arr.charAt(0).toUpperCase() + arr.slice(1))
-  //     .join(" ");
-  //   return capital;
-  // });
 };
 console.log(titleCased());
